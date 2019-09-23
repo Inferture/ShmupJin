@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Action xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <keys>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>D</key>
+    </ActionKey>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>RightArrow</key>
+    </ActionKey>
+    <ActionKey>
+      <inputType>Axis</inputType>
+      <key>Joystick 1 Axis X</key>
+    </ActionKey>
+  </keys>
+  <id>right</id>
+  <name>Right</name>
+  <information>Going right</information>
+  <category>
+    <name>Movements</name>
+    <description>To move around</description>
+  </category>
+  <axisAble>true</axisAble>
+  <keyAble>true</keyAble>
+  <lastFrameActiveAxis>false</lastFrameActiveAxis>
+  <menuAction>Right</menuAction>
+</Action>

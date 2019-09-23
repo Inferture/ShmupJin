@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Action xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <keys>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>Space</key>
+    </ActionKey>
+    <ActionKey>
+      <inputType>Button</inputType>
+      <key>Joystick1Button0</key>
+    </ActionKey>
+  </keys>
+  <id>shoot</id>
+  <name>Shoot</name>
+  <information>Shoots bullets</information>
+  <category>
+    <name>Actions</name>
+    <description>Various actions</description>
+  </category>
+  <axisAble>true</axisAble>
+  <keyAble>true</keyAble>
+  <lastFrameActiveAxis>false</lastFrameActiveAxis>
+  <menuAction>Select</menuAction>
+</Action>

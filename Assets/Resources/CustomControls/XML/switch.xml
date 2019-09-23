@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Action xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <keys>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>Tab</key>
+    </ActionKey>
+    <ActionKey>
+      <inputType>Button</inputType>
+      <key>Joystick1Button4</key>
+    </ActionKey>
+  </keys>
+  <id>switch</id>
+  <name>Switch arm</name>
+  <information>Change fire mode</information>
+  <category>
+    <name>Actions</name>
+    <description>Various actions</description>
+  </category>
+  <axisAble>true</axisAble>
+  <keyAble>true</keyAble>
+  <lastFrameActiveAxis>false</lastFrameActiveAxis>
+  <menuAction>Cancel</menuAction>
+</Action>

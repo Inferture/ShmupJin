@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Action xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <keys>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>LeftArrow</key>
+    </ActionKey>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>Q</key>
+    </ActionKey>
+  </keys>
+  <id>left</id>
+  <name>Left</name>
+  <information>Going left</information>
+  <category>
+    <name>Movements</name>
+    <description>To move around</description>
+  </category>
+  <axisAble>true</axisAble>
+  <keyAble>true</keyAble>
+  <lastFrameActiveAxis>false</lastFrameActiveAxis>
+  <menuAction>Left</menuAction>
+</Action>

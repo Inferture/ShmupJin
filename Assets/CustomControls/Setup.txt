@@ -1,0 +1,27 @@
+//Setup\\
+0)Extraire Custom Controls
+1)Ajouter InputManager.asset dans ProjectsSettings (remplacer l'ancien)
+2)Mettre Dossier CustomControls dans Assets
+3)Créer une scène (ex: Intro) pour le menu principal
+4)Aller dans Prefab et glisser les 2 prefabs dans la scène
+5)Window -> Keymapping --> Ajouter des actions
+
+//Utiliser\\
+
+//Tester si une action est effectuée
+6) 
+Tester si une action est effectuée: Controls.GetActionDown(*id de l'action*) (équivalent de Input.GetKeyDown(), si le bouton a été pressé ou non)
+Tester si une action est en train d'être effectuée: Controls.GetAction(*id de l'action*) (équivalent de Input.GetKey(), si le bouton est en train
+d'être pressé ou non)
+
+Exemple: Action id: Jump
+
+Soit, vous vous souvenez de l'id, et vous le mettez en chaîne de caractère (Controls.GetAction("Jump"))
+Soit, vous utilisez Controls.GetAction(KeyStrings.key_Jump); --> avec de l'autocomplétion du coup normalement
+
+//Choisir la scène à charger quand on appuie sur Play
+7)Changer le nom de la scène dans l'objet Menu/MainMenu/Play: script 'Option Room', attribut scene en le nom de la scène désirée (ex: SampleScene) pour la charger au moment du choix "Play"
+
+
+//Changer couleur surlignage
+8)Changer couleur surlignage: modifier l'image Sprites/selected.png

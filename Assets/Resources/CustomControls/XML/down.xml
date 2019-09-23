@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Action xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <keys>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>DownArrow</key>
+    </ActionKey>
+    <ActionKey>
+      <inputType>Key</inputType>
+      <key>S</key>
+    </ActionKey>
+    <ActionKey>
+      <inputType>Axis</inputType>
+      <key>Joystick 1 Axis Y</key>
+    </ActionKey>
+  </keys>
+  <id>down</id>
+  <name>Down</name>
+  <information>Going downwards</information>
+  <category>
+    <name>Movements</name>
+    <description>To move around</description>
+  </category>
+  <axisAble>true</axisAble>
+  <keyAble>true</keyAble>
+  <lastFrameActiveAxis>false</lastFrameActiveAxis>
+  <menuAction>Down</menuAction>
+</Action>
