@@ -7,7 +7,7 @@ public class Controls : MonoBehaviour {
 
 
 
-    public static int numAlternates=3;
+    public static int numAlternates=4;
     public static float threshold;
     public static string up;
     public static string down;
@@ -74,11 +74,22 @@ public class Controls : MonoBehaviour {
             
             int i = 0;
             
-            while(i<numAlternates &&i<a.keys.Count && PlayerPrefs.GetString(PREFIXE_ACTION + a.id + "-" + i, a.keys[i].key)!=null)
+            while(i<numAlternates && ( i<a.keys.Count && PlayerPrefs.GetString(PREFIXE_ACTION + a.id + "-" + i, a.keys[i].key)!=null) || (PlayerPrefs.GetString(PREFIXE_ACTION + a.id + "-" + i, "") != "" && i<99))
             {
-                Action.InputType type = (Action.InputType)PlayerPrefs.GetInt(PREFIXE_ACTION + a.id + "-" + i + "-" + "type", (int)a.keys[i].inputType);
-                a.keys[i] = new ActionKey(type, PlayerPrefs.GetString(PREFIXE_ACTION + a.id + "-" + i, a.keys[i].key));
-                i++;
+                if(i<a.keys.Count)
+                {
+                    Action.InputType type = (Action.InputType)PlayerPrefs.GetInt(PREFIXE_ACTION + a.id + "-" + i + "-" + "type", (int)a.keys[i].inputType);
+                    a.keys[i] = new ActionKey(type, PlayerPrefs.GetString(PREFIXE_ACTION + a.id + "-" + i, a.keys[i].key));
+                    i++;
+                }
+                else
+                {
+                    Action.InputType type = (Action.InputType)PlayerPrefs.GetInt(PREFIXE_ACTION + a.id + "-" + i + "-" + "type");
+                    a.keys.Add(new ActionKey(type, PlayerPrefs.GetString(PREFIXE_ACTION + a.id + "-" + i)));
+                    i++;
+                    Debug.Log("Well... " + i + "|" + PlayerPrefs.GetString(PREFIXE_ACTION + a.id + "-" + i));
+                }
+                
             }
         }
     }

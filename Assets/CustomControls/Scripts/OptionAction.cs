@@ -151,9 +151,13 @@ public class OptionAction : Option {
                         PlayerPrefs.SetInt(Controls.PREFIXE_ACTION + action.id + "-" + selectedNum + "-" + "type", (int)Action.InputType.Key);
                         selected = false;
 
-                        if(selectedNum==alternates.Count-1 && alternates.Count<Controls.numAlternates)
+                        if (selectedNum == alternates.Count - 1 && action.keys.Count<=selectedNum)
                         {
                             action.AddKey(new ActionKey());
+                            
+                        }
+                        if(alternates.Count<Controls.numAlternates)
+                        {
                             AddEmpty();
                         }
                         Controls.LoadControls();
